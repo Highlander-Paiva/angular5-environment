@@ -1,0 +1,27 @@
+{
+  "generator-jhipster": {
+    "jhipsterVersion": "4.14.0",
+    "baseName": "envAng5",
+    "clientFramework": "angularX",
+    "useSass": true,
+    "clientPackageManager": "yarn",
+    "authenticationType": "oauth2",
+    "cacheProvider": "no",
+    "databaseType": "postgree",
+    "devDatabaseType": "postgree",
+    "prodDatabaseType": "postgree",
+    "applicationType": "monolith",
+    "testFrameworks": [
+      "protractor"
+    ],
+    "jhiPrefix": "jhi",
+    "otherModules": [
+      {
+        "name": "generator-jhipster-bootstrap-material-design",
+        "version": "3.5.1"
+      }
+    ],
+    "enableTranslation": false,
+    "skipServer": true
+  }
+}
