@@ -2,7 +2,9 @@
 # Project Specific
 ######################
 /src/main/webapp/content/css/main.css
-/target/www/**
+/build/www/**
+.jhipster/
+
 
 ######################
 # Node
