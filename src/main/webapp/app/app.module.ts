@@ -5,6 +5,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { Ng2Webstorage } from 'ngx-webstorage';
 import { JhiEventManager } from 'ng-jhipster';
+// used to create fake backend
+import { fakeBackendProvider } from './_helpes/index';
 
 import { AuthExpiredInterceptor } from './blocks/interceptor/auth-expired.interceptor';
 import { ErrorHandlerInterceptor } from './blocks/interceptor/errorhandler.interceptor';
@@ -74,7 +76,9 @@ import {
             deps: [
                 Injector
             ]
-        }
+        },
+        // provider used to create fake backend
+        fakeBackendProvider
     ],
     bootstrap: [ JhiMainComponent ]
 })
